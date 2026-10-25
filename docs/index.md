@@ -20,12 +20,26 @@ Two kinds of notes:
     One small thing I learned, dated and tagged. A running stream of
     cloud-native, Kubernetes, and networking fixes.
 
--   :material-book-open-variant: **[Guides](guides/index.md)**
+-   :material-book-open-variant: **[Knowledge Base](knowledge-base/aws/index.md)**
 
     ---
 
-    Full how-tos and runbooks — Helm installs, observability stacks,
-    GitOps, and platform engineering, migrated from my working notes.
+    Deep technical references — AWS, Kubernetes, GCP, CI/CD, IaC,
+    observability, messaging, SRE, and systems.
+
+-   :material-flask: **[Labs](labs/index.md)**
+
+    ---
+
+    Hands-on lab series — a 15-part Internal Developer Platform build
+    and Active Directory engineering.
+
+-   :material-comment-question: **[Interview Prep](interview-prep/index.md)**
+
+    ---
+
+    Quick-reference Q&A for AWS, Kubernetes, Terraform, and CI/CD
+    technical screens.
 
 </div>
 

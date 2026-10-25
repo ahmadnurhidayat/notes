@@ -60,10 +60,136 @@ nav:
   - TIL:
       - til/index.md
       - Gateway API HTTPRoute parentRef: til/gateway-api-httproute-parentref.md
-  - Guides:
-      - guides/index.md
+  - Knowledge Base:
+      - AWS:
+          - knowledge-base/aws/index.md
+          - Landing Zone: knowledge-base/aws/landing-zone.md
+          - Well-Architected Framework: knowledge-base/aws/well-architected-framework.md
+          - FinOps: knowledge-base/aws/finops.md
+          - Karpenter on EKS: knowledge-base/aws/karpenter-eks.md
+          - AWS Load Balancer Controller: knowledge-base/aws/aws-load-balancer-controller.md
+          - Workload Identity (IRSA): knowledge-base/aws/workload-identity-irsa.md
+          - PrivateLink: knowledge-base/aws/privatelink.md
+          - VPC Lattice (Multi-Account): knowledge-base/aws/vpc-lattice-multi-account.md
+          - VPC Resource Gateways: knowledge-base/aws/vpc-resource-gateways.md
+          - Centralized VPC Endpoints: knowledge-base/aws/centralized-vpc-endpoints.md
+          - Centralized Egress (TGW + NAT): knowledge-base/aws/centralized-egress-tgw-nat.md
+          - Egress Inspection (GWLB): knowledge-base/aws/egress-inspection-gwlb.md
+          - RDS Proxy on ECS (Terraform): knowledge-base/aws/rds-proxy-ecs-terraform.md
+          - EC2 Instance Scheduler: knowledge-base/aws/ec2-instance-scheduler.md
+      - Kubernetes:
+          - Kubernetes Under the Hood: knowledge-base/k8s/kubernetes-under-the-hood.md
+          - How CNI Works: knowledge-base/k8s/how-cni-works.md
+          - How CSI Works: knowledge-base/k8s/how-csi-works.md
+          - Gateway API on EKS: knowledge-base/k8s/gateway-api-eks.md
+          - Gateway API on GKE: knowledge-base/k8s/gke-gateway-api.md
+          - KEDA Event-Driven Autoscaling: knowledge-base/k8s/keda-event-driven-autoscaling.md
+          - Pod Disruption Budgets: knowledge-base/k8s/pod-disruption-budgets.md
+          - Cross-Namespace CronJob: knowledge-base/k8s/cross-ns-cronjob-centralize.md
+          - Secrets JSON Mount: knowledge-base/k8s/secrets-json-mount.md
+          - MicroK8s on Proxmox: knowledge-base/k8s/microk8s-proxmox-sandbox.md
+          - Naming Convention: knowledge-base/k8s/k8s-naming-convention.md
+          - Gateway API Migration (Helm): knowledge-base/kubernetes/gateway-api-migration-helm.md
+      - GCP:
+          - GKE Cluster Creation: knowledge-base/gcp/gke-cluster-creation.md
+          - Why We Migrated Ingress to Gateway API: knowledge-base/gcp/why-we-migrated-ingress-to-gateway-api.md
+          - GKE Workload Identity: knowledge-base/gcp/gke-workload-identity.md
+          - Shared VPC + Google-Managed Services: knowledge-base/gcp/shared-vpc-google-managed-services.md
+          - GKE Hyperdisk HA (Multi-AZ): knowledge-base/gcp/gke-hyperdisk-ha-multi-az.md
+          - GKE PDB + Spot VMs: knowledge-base/gcp/gke-pdb-spot-vms.md
+          - GKE WebRTC TURN/STUN (coturn): knowledge-base/gcp/gke-webrtc-turn-stun-coturn.md
+          - GKE FrontendConfig HTTP→HTTPS: knowledge-base/gcp/gke-frontend-config-http-https-redirect.md
+      - CI/CD:
+          - knowledge-base/cicd/index.md
+          - Foundations: knowledge-base/cicd/foundations.md
+          - Best Practices: knowledge-base/cicd/best-practices.md
+          - GitOps: knowledge-base/cicd/gitops.md
+          - Blue-Green Deployment: knowledge-base/cicd/blue-green-deployment.md
+          - Build Once, Deploy Many: knowledge-base/cicd/build-once-deploy-many.md
+          - DORA Metrics: knowledge-base/cicd/dora-matrix.md
+          - GitHub Actions Reference: knowledge-base/cicd/github-actions-reference.md
+      - IaC:
+          - knowledge-base/iac/index.md
+          - Foundations: knowledge-base/iac/foundations.md
+          - Best Practices: knowledge-base/iac/best-practices.md
+          - CI/CD for IaC: knowledge-base/iac/cicd.md
+          - Pre-commit & Validation: knowledge-base/iac/pre-commit-and-validation.md
+          - Terraform Multi-Account VPC Lattice: knowledge-base/iac/terraform-multi-account-vpc-lattice.md
       - Observability:
-          - Loki on Kubernetes (Helm): guides/observability/loki-helm-production.md
+          - Grafana Alloy: knowledge-base/observability/grafana-alloy.md
+          - Grafana Alloy Migration (Promtail): knowledge-base/observability/grafana-alloy-migration-promtail.md
+          - Loki on Kubernetes (Helm): knowledge-base/observability/loki-helm-production.md
+          - Prometheus (Helm): knowledge-base/observability/prometheus-helm.md
+          - Tempo (Helm): knowledge-base/observability/tempo-helm.md
+          - Tempo Production (Helm): knowledge-base/observability/tempo-helm-production.md
+          - Thanos (Helm): knowledge-base/observability/thanos-helm.md
+          - MongoDB Exporter: knowledge-base/observability/mongodb-exporter.md
+          - Uptime Kuma: knowledge-base/observability/uptime-kuma.md
+      - Messaging:
+          - EMQX on GKE: knowledge-base/messaging/emqx-on-gke.md
+          - EMQX Production (Helm): knowledge-base/messaging/emqx-helm-production.md
+          - VerneMQ on GKE: knowledge-base/messaging/vernemq-on-gke.md
+          - Kafka on GKE (KRaft): knowledge-base/messaging/kafka-on-gke-kraft.md
+          - Kafka on GKE (ZooKeeper): knowledge-base/messaging/kafka-on-gke-zookeeper.md
+          - Kafka Standalone VM: knowledge-base/messaging/kafka-standalone-vm.md
+          - Kafka Cluster (Docker): knowledge-base/messaging/kafka-cluster-docker.md
+          - Kafka UI on GKE: knowledge-base/messaging/kafka-ui-on-gke.md
+      - Database:
+          - PostgreSQL Connection Pooling Trap: knowledge-base/database/postgresql-connection-pooling-prepared-statement-trap.md
+          - MongoDB ReplicaSet: knowledge-base/database/mongodb-replicaset.md
+      - SRE:
+          - Principles: knowledge-base/sre/principles.md
+          - Culture and Structure: knowledge-base/sre/culture-and-structure.md
+          - Day-Two Operations: knowledge-base/sre/day-two-operations.md
+      - System:
+          - Unbound DNS Setup: knowledge-base/system/unbound-dns-setup.md
+          - Split-Horizon DNS Forwarding: knowledge-base/system/split-horizon-dns-forwarding.md
+          - WireGuard Server/Client: knowledge-base/system/wireguard-setup-server-client.md
+          - MikroTik Firewall Automation: knowledge-base/system/mikrotik-firewall-automation-expressjs.md
+          - Docker Multi-stage Builds: knowledge-base/system/docker-multistage-builds.md
+          - Custom SSH Config: knowledge-base/system/custom-ssh-config.md
+      - Convention:
+          - Branching Strategy: knowledge-base/convention/brancing-strategy.md
+          - Repository Naming: knowledge-base/convention/repository-naming.md
+  - Labs:
+      - labs/index.md
+      - Active Directory:
+          - labs/active-directory/index.md
+          - "Lab 01: AD DNS Setup": labs/active-directory/lab-01-ad-dns-setup.md
+          - "Lab 02: GPO Fundamentals": labs/active-directory/lab-02-gpo-fundamentals.md
+          - "Lab 03: Advanced GPO": labs/active-directory/lab-03-advanced-gpo.md
+          - "Lab 04: Multi-DC Replication": labs/active-directory/lab-04-multi-dc-replication.md
+      - Platform Engineering:
+          - labs/platform-engineering/index.md
+          - "Lab 01: Fundamentals": labs/platform-engineering/lab-01-fundamentals.md
+          - "Lab 02: K8s Foundation": labs/platform-engineering/lab-02-k8s-foundation.md
+          - "Lab 03: GitOps Basics": labs/platform-engineering/lab-03-gitops-basics.md
+          - "Lab 04: Argo CD + Helm": labs/platform-engineering/lab-04-argocd-helm.md
+          - "Lab 05: Crossplane Install": labs/platform-engineering/lab-05-crossplane-install.md
+          - "Lab 06: Managed Resources": labs/platform-engineering/lab-06-managed-resources.md
+          - "Lab 07: Compositions & XRDs": labs/platform-engineering/lab-07-compositions-xrds.md
+          - "Lab 08: Backstage Setup": labs/platform-engineering/lab-08-backstage-setup.md
+          - "Lab 09: Software Templates": labs/platform-engineering/lab-09-software-templates.md
+          - "Lab 10: GitOps IaC": labs/platform-engineering/lab-10-gitops-iac.md
+          - "Lab 11: ApplicationSets": labs/platform-engineering/lab-11-applicationsets.md
+          - "Lab 12: Advanced Compositions": labs/platform-engineering/lab-12-advanced-compositions.md
+          - "Lab 13: Backstage Plugins": labs/platform-engineering/lab-13-backstage-plugins.md
+          - "Lab 14: Full IDP": labs/platform-engineering/lab-14-full-idp.md
+          - "Lab 15: Security & Observability": labs/platform-engineering/lab-15-security-observability.md
+  - Interview Prep:
+      - interview-prep/index.md
+      - AWS: interview-prep/aws.md
+      - Kubernetes: interview-prep/k8s.md
+      - Terraform: interview-prep/terraform.md
+      - CI/CD: interview-prep/cicd.md
+  - Conferences:
+      - KCD Indonesia 2026:
+          - CFP Submission: conferences/kcd-indonesia-2026/cfp-submission.md
+          - CFP (Sessionize): conferences/kcd-indonesia-2026/cfp-sessionize.md
+          - Presentation Draft: conferences/kcd-indonesia-2026/presentation-draft.md
+          - Demo Manifests: conferences/kcd-indonesia-2026/manifests/README.md
+  - CV:
+      - Ahmad Nurhidayat: cv/ahmad-nurhidayat.md
 
 plugins:
   - search
