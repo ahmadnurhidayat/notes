@@ -1,0 +1,108 @@
+site_name: Ahmad's Notes
+site_url: https://notes.beyondyou.my.id/
+site_description: Working notes on cloud-native infrastructure — the quick things I look up, not read cover to cover.
+site_author: Ahmad Nurhidayat
+copyright: Copyright &copy; 2026 Ahmad Nurhidayat
+
+repo_url: https://github.com/ahmadnurhidayat/notes
+repo_name: ahmadnurhidayat/notes
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  variant: modern
+  language: en
+  features:
+    - announce.dismiss
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.footnote.tooltips
+    - content.tabs.link
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.path
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.suggest
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: lucide/sun-moon
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: lucide/sun
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: lucide/moon
+        name: Switch to system preference
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ahmadnurhidayat
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/ahmad-nurhidayat
+  homepage: https://ahmadnurhidayat.github.io
+
+nav:
+  - Home: index.md
+  - TIL:
+      - til/index.md
+      - Gateway API HTTPRoute parentRef: til/gateway-api-httproute-parentref.md
+  - Guides:
+      - guides/index.md
+      - Observability:
+          - Loki on Kubernetes (Helm): guides/observability/loki-helm-production.md
+
+plugins:
+  - search
+  - tags
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:zensical.extensions.emoji.to_svg
+      emoji_index: !!python/name:zensical.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
