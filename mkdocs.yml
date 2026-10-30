@@ -60,6 +60,7 @@ nav:
   - TIL:
       - til/index.md
       - Gateway API HTTPRoute parentRef: til/gateway-api-httproute-parentref.md
+      - AWS ECS Gateway — managed ingress: til/aws-ecs-gateway-managed-ingress.md
   - Knowledge Base:
       - AWS:
           - knowledge-base/aws/index.md
@@ -79,6 +80,7 @@ nav:
           - EC2 Instance Scheduler: knowledge-base/aws/ec2-instance-scheduler.md
           - Route 53 Resolver Best Practices: knowledge-base/aws/route53-resolver-best-practices.md
           - Route 53 Profiles Multi-Account Migration: knowledge-base/aws/route53-profiles-multi-account-migration.md
+          - Amazon ECS Gateway: knowledge-base/aws/ecs-gateway.md
       - Kubernetes:
           - Kubernetes Under the Hood: knowledge-base/k8s/kubernetes-under-the-hood.md
           - How CNI Works: knowledge-base/k8s/how-cni-works.md
