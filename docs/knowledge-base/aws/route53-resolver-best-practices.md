@@ -90,5 +90,6 @@ a DNSSEC-signed zone.
 
 ---
 
-*See also:* [Split-Horizon DNS Forwarding](../system/split-horizon-dns-forwarding.md)
+*See also:* [Migrating Multi-Account DNS to Route 53 Profiles](route53-profiles-multi-account-migration.md)
+· [Split-Horizon DNS Forwarding](../system/split-horizon-dns-forwarding.md)
 · [Unbound DNS Setup](../system/unbound-dns-setup.md)
