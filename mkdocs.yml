@@ -81,6 +81,7 @@ nav:
           - Route 53 Resolver Best Practices: knowledge-base/aws/route53-resolver-best-practices.md
           - Route 53 Profiles Multi-Account Migration: knowledge-base/aws/route53-profiles-multi-account-migration.md
           - Amazon ECS Gateway: knowledge-base/aws/ecs-gateway.md
+          - Network Firewall Inspection Architectures: knowledge-base/aws/network-firewall-inspection-architectures.md
       - Kubernetes:
           - Kubernetes Under the Hood: knowledge-base/k8s/kubernetes-under-the-hood.md
           - How CNI Works: knowledge-base/k8s/how-cni-works.md
